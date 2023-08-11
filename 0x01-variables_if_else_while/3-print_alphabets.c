@@ -15,9 +15,9 @@ int main(void)
 	{
 		putchar(letter);
 		i++;
-		if (i == 26 && letter != 90)
+		if (i == 26 && letter !='Z' )
 		{
-			letter = 60;
+			letter = 'A';
 			i = 0;
 		}
 		else

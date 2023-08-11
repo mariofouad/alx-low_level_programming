@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - entry point
  *
@@ -6,6 +7,7 @@
  *
  * Return: 0
  */
+
 int main(void)
 {
 	char letter = 'a';
@@ -14,16 +16,17 @@ int main(void)
 	while (i < 26)
 	{
 		putchar(letter);
-		i++;
-		if (i == 26 && letter !='Z' )
+		i = i + 1;
+		if (i == 26 && letter != 'Z')
 		{
 			letter = 'A';
 			i = 0;
 		}
 		else
 		{
-			letter++;
+			letter = letter + 1;
 		}
 	}
+	putchar('\n');
 	return (0);
 }

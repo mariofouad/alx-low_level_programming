@@ -14,8 +14,8 @@ int main(void)
 		for (i = 0; i < 26; i++)
 		{
 			putchar(alp);
-			putchar('\n');
 			alp++;
 		}
+		putchar('\n');
 	return (0);
 }

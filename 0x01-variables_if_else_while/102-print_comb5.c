@@ -4,54 +4,28 @@
  *
  * Description: print combinations
  *
- * Return: 0
+ * Return:0
  */
 int main(void)
 {
-	int i;
-	int j;
-	int k;
-	int l;
+	int num1;
+	int num2;
 
-	for (i = 0; i <= 9; i++)
+	for (num1 = 0; num1 <= 98; num1++)
 	{
-		for (j = 0; j <= 9; j++)
+		for (num2 = num1 + 1; num2 <= 99; num2++)
 		{
-			for (k = i; k <= 9; k++)
+			putchar((num1 / 10) + '0');
+			putchar((num1 % 10) + '0');
+			putchar(' ');
+			putchar((num2 / 10) + '0');
+			putchar((num2 % 10) + '0');
+			if (num1 != 98 || num2 != 99)
 			{
-				for (l = j + 1; l <= 10; l++)
-				{
-					int d = l;
-					int m = k;
-
-					if (i == 0 && j == 0 && l == 10 && k != 9)
-					{
-						d = l % 10;
-						m = k + 1;
-					}
-					else if (l == 10)
-					{
-						continue;
-					}
-					putchar(i + '0');
-					putchar(j + '0');
-					putchar(' ');
-					putchar(m + '0');
-					putchar(d + '0');
-					if ((i == 9) && (j == 8) && (k == 9) && (l == 9))
-					{
-					}
-					else
-					{
-						putchar(',');
-						putchar(' ');
-					}
-
-				}
-
+				putchar(',');
+				putchar(' ');
 			}
 		}
-
 	}
 	putchar('\n');
 	return (0);

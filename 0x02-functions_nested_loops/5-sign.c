@@ -3,7 +3,7 @@
  * print_sign - prints the sign
  * @n: the number passed
  *
- * return: 1 if +ve, 0 in case 0, in case -ve
+ * Return: 1 if +ve, 0 in case 0, in case -ve
  */
 int print_sign(int n)
 {

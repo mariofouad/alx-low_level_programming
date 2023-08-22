@@ -31,8 +31,10 @@ if (num > INT_MAX / 10 || (num == INT_MAX / 10 && (s[i] - '0') > INT_MAX % 10))
 		return (INT_MAX);
 }
 num = num * 10 + (s[i] - '0');
-
 }
+else
+	if (num != 0)
+	break;
 i++;
 }
 

@@ -1,5 +1,6 @@
 #include "main.h"
 #include <string.h>
+#include <stdlib.h>
 /**
  * _atoi - change string to int
  * @s: passed string

@@ -9,12 +9,12 @@
  */
 int _atoi(char *s)
 {
-	int p;
-	int n;
-	int num;
-	int i;
+	int p = 0;
+	int n = 0;
+	int num = 0;
+	int i = 0;
 
-	while (s[i] != '\n')
+	while (s[i] != '\0')
 	{
 		if (s[i] == '+')
 			p++;
@@ -25,7 +25,7 @@ int _atoi(char *s)
 		i++;
 	}
 
-	if (n > p)
+	if (n >= p)
 		num = (-1) * num;
 
 

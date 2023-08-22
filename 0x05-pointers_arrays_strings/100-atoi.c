@@ -25,10 +25,8 @@ int _atoi(char *s)
 		i++;
 	}
 
-	if (n >= p && n != 0)
+	if (n % 2 == 1)
 		num = (-1) * num;
-
-
 
 	return (num);
 }

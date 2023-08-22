@@ -9,7 +9,26 @@
  */
 int _atoi(char *s)
 {
-	int num = atoi(s);
+	int p;
+	int n;
+	int num;
+	int i;
+
+	while (s[i] != '\n')
+	{
+		if (s[i] == '+')
+			p++;
+		else if (s[i] == '-')
+			n++;
+		else if (s[i] >= '0' && s[i] <= '9')
+			num = num * 10 + (s[i] - '0');
+		i++;
+	}
+
+	if (n > p)
+		num = (-1) * num;
+
+
 
 	return (num);
 }

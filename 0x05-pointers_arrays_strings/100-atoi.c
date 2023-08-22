@@ -25,7 +25,7 @@ int _atoi(char *s)
 		i++;
 	}
 
-	if (n >= p)
+	if (n >= p && n != 0)
 		num = (-1) * num;
 
 

@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdbool.h>
 /**
  * cap_string - capitalize fsts
  * @s: fst

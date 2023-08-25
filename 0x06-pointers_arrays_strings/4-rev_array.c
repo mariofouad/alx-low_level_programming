@@ -4,7 +4,7 @@
  * @a: passed arr
  * @n: size
  */
-void reverse_array(int *a, int n);
+void reverse_array(int *a, int n)
 {
 	int len = n - 1;
 	int i;

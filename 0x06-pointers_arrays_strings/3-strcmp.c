@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * _strcmp - compares 2 strings
- * @dest: fst
- * @src: scd
+ * @s1: fst
+ * @s2: scd
  *
  * Return: pointer
  */

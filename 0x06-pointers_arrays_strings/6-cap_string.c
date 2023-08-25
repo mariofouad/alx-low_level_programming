@@ -26,6 +26,8 @@ char *cap_string(char *s)
 		{
 			newword = true;
 		}
+		else
+			newword = false;
 	}
 	return (s);
 }

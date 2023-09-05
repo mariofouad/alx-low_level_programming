@@ -8,16 +8,17 @@
 char *_strdup(char *str)
 {
 	char *nstr;
+	int len = strlen(str);
 
 	if (str == NULL)
 		return (NULL);
 
-	nstr = malloc(sizeof(char) * (strlen(str) + 1));
+	nstr = malloc(sizeof(char) * (len + 1));
 
 	if (nstr == NULL)
 		return (NULL);
 
-	for (i = 0; i <= strlen(str); i++)
+	for (i = 0; i <= len; i++)
 		nstr[i] = str[i];
 
 	return (nstr);

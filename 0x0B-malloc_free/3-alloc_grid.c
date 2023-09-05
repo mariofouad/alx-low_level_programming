@@ -17,7 +17,7 @@ int **alloc_grid(int width, int height)
 	if (rows <= 0 || col <= 0)
 		return (NULL);
 
-	matrix = (int **)malloc(sizeof(int *) * row);
+	matrix = (int **)malloc(sizeof(int *) * rows);
 
 	if (matrix == NULL)
 		return (NULL);

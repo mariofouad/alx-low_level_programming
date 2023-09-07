@@ -2,16 +2,6 @@
 #include <stdlib.h>
 
 /**
- * _isdigit - checks if a character is a digit
- * @c: the character to check
- * Return: 1 if c is a digit, 0 otherwise
- */
-int _isdigit(char c)
-{
-    return (c >= '0' && c <= '9');
-}
-
-/**
  * main - multiplies two positive numbers
  * @argc: argument count
  * @argv: argument vector
@@ -19,7 +9,7 @@ int _isdigit(char c)
  */
 int main(int argc, char *argv[])
 {
-    int i, j, len1, len2, carry, sum;
+    int i, j, len1, len2, k, carry, sum;
     char *result;
 
     if (argc != 3)
@@ -32,7 +22,7 @@ int main(int argc, char *argv[])
     {
         for (j = 0; argv[i][j] != '\0'; j++)
         {
-            if (!_isdigit(argv[i][j]))
+            if (argv[i][j] < '0' || argv[i][j] > '9')
             {
                 printf("Error\n");
                 return (98);
@@ -51,15 +41,15 @@ int main(int argc, char *argv[])
         return (98);
     }
 
-    for (i = 0; i <= len1 + len2; i++)
-        result[i] = '0';
+    for (k = 0; k <= len1 + len2; k++)
+        result[k] = '0';
 
     for (i = len1 - 1; i >= 0; i--)
     {
         carry = 0;
         for (j = len2 - 1; j >= 0; j--)
         {
-            sum = (argv[1][i] - '0') * (argv[2][j] - '0') + (result[i + j + 1] - '0') + carry;
+            sum = ((argv[1][i] - '0') * (argv[2][j] - '0')) + (result[i + j + 1] - '0') + carry;
             carry = sum / 10;
             result[i + j + 1] = (sum % 10) + '0';
         }
@@ -75,3 +65,4 @@ int main(int argc, char *argv[])
 
     return (0);
 }
+

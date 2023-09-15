@@ -13,7 +13,7 @@ int op_add(int a, int b)
 /**
  * op_sub - sub nums
  * @a: fst num
- * @a: scnd num
+ * @b: scnd num
  *
  * Return: sub num
  */
@@ -33,7 +33,7 @@ int op_mul(int a, int b)
 	return (a * b);
 }
 /**
- * op_mul - mm
+ * op_div - mm
  * @a: m
  * @b: m
  *
@@ -44,7 +44,7 @@ int op_div(int a, int b)
 	return (a / b);
 }
 /**
- * op_mul - mm
+ * op_mod - mm
  * @a: m
  * @b: m
  *

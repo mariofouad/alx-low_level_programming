@@ -9,7 +9,7 @@ size_t print_list(const list_t *h)
 	size_t nodes;
 	unsigned int i;
 
-	while (h-> != NULL)
+	while (h->!= NULL)
 	{
 		for (i = 0; i < h->len; i++)
 		{
@@ -17,5 +17,5 @@ size_t print_list(const list_t *h)
 		}
 		h = h->next;
 	}
-	return nodes;
+	return (nodes);
 }

@@ -1,12 +1,12 @@
 #include "lists.h"
 /**
- * print_lists - print all data
+ * print_list - print all data
  * @h: passed list
  * Return: number of nodes
  */
 size_t print_list(const list_t *h)
 {
-	size_t nodes = 0;	
+	size_t nodes = 0;
 
 	while (h != NULL)
 	{

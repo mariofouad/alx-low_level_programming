@@ -25,8 +25,8 @@ list_t *add_node_end(list_t **head, const char *str)
 	else
 	{
 		while (h->next != NULL)
-			h = h->next;
-		h->next = new;
+			head = h->next;
+		head->next = new;
 	}
 	return (new);
 }

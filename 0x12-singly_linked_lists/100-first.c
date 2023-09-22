@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * 
- * __attribute__ - start
- * @constructor: s
+ * before_main - Function executed before main
+ *
+ * Description: Prints two lines before the main function is executed.
  */
 void __attribute__ ((constructor)) before_main()
 {

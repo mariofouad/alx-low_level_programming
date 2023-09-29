@@ -6,15 +6,16 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
+	int i;
 	unsigned int num = 0;
 
 	if (!b)
 		return (0);
-	while (*b)
+	for (i = 0; b[i]; i++)
 	{
-		if (*b != '0' && *b != '1')
+		if (b[i] != '0' && b[i] != '1')
 			return (0);
-		num = num * 2 + (*b++ - '0');
+		num = (1 << i) + (b[i] - '0');
 	}
 	return (num);
 }

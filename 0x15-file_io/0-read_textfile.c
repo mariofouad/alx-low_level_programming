@@ -25,7 +25,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		fclose(fp);
 		return (0);
 	}
-	numread = fread(buffer, sizeof(char), letters, file);
+	numread = fread(buffer, sizeof(char), letters, fp);
 	numprinted = fwrite(buffer, sizeof(char), numread, stdout);
 	free(buffer);
 	fclose(fp);
